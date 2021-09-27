@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------------------------------------------
+----------------------------------------   Binary tree   -------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Binary tree: Is a data structure, where the root is grater than the sub-tree to its left and
+             the root is less than the sub-tree to its right.
+
+             Root > left-subtree
+             Root < right-subtree
+
+            - Complexity: 
+
+                      --------------------------------  CHECK COMPLEXITIES ----------------------------------------
+                      --------------------------------  CHECK COMPLEXITIES ----------------------------------------
+                      --------------------------------  CHECK COMPLEXITIES ----------------------------------------
+
+                    -Insert: O(1) time. It takes constant time to INSERT a node into the tree.
+                    -Delete: O(1) time. It takes constant time to DELETE a node of the tree.
+                    -Search: O(h) time, where 'h' is the height of the tree. It takes the height of the
+                                                                             tree to search for an element,
+                                                                             because the worst scenario is going 
+                                                                             down to a leaf.
+
+            - How it's seen a Binary Search Tree
+
+                                                    node                 
+                                                  /      \                 
+                                                 /        \
+                                                / \      / \  
+                           Left sub-tree <-    / L \    / R \    -> Right sub-tree   
+                                              /_____\  /_____\     
+                             
+                           LEFT sub-tree:                           RIGHT sub-tree: 
+                           ALL the values of the nodes              ALL the values of the nodes 
+                           have to be -> LESS THAN <- the           have to be -> GRATER THAN <-
+                           value of the root node.                  the value of the root node.
+
+            -How it's seen a Node: 
+                                    ____________________________
+                                    |____________Root___________|  
+                                    |                           |
+                                    |          Value            |
+                                    |                           |
+                                    | Left_child    Right_child |
+                                    -----------------------------
+                                   /                              \
+                                  /                                \
+                                 /                                  \
+                                /                                    \
+                               \/                                    \/
+                ____________________________                ____________________________
+                |____________Left___________|               |____________Right__________|
+                |                           |               |                           |
+                |   Value   <  Root.value   |               |   Value   >  Root.value   |
+                |                           |               |                           |
+                | Left_child    Right_child |               | Left_child    Right_child |
+                -----------------------------               -----------------------------       
+                                                    .
+                                                    .
+                                                    .
+                                                    .
+                                                    .
+
+
+
+*/
